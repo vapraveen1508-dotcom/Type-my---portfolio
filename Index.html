@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saran | Dot Portfolio</title>
+    <style>
+        :root { --primary: #3498db; --dark: #1a1a2e; --light: #f4f4f9; --card-bg: #ffffff; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: var(--light); color: #333; }
+        nav { background: var(--dark); padding: 15px 0; position: sticky; top: 0; display: flex; justify-content: center; gap: 20px; z-index: 1000; }
+        nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; text-transform: uppercase; }
+        header { background: var(--dark); color: white; text-align: center; padding: 40px 20px; border-bottom: 4px solid var(--primary); }
+        .container { padding: 20px; max-width: 600px; margin: auto; }
+        section { display: none; animation: slideUp 0.4s ease-out; }
+        section:target { display: block; }
+        #home:not(:target) { display: block; }
+        .card { background: var(--card-bg); padding: 25px; margin-top: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid var(--primary); }
+        img { width: 100%; border-radius: 8px; margin-top: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#theory">Theory</a>
+</nav>
+
+<header>
+    <h1>Saran (Dot)</h1>
+    <p>Electronics & Communication Engineering Student</p>
+</header>
+
+<div class="container">
+    <section id="home">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I am a first-year ECE student passionate about theoretical physics and complex circuit analysis. I work on bridging the gap between ancient engineering and modern cosmology.</p>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>My Certificates</h2>
+        <div class="card">
+            <p>Online Course Completion</p>
+            <img src="https://via.placeholder.com/400x250?text=Your+Certificate+Link+Here" alt="Certificate">
+        </div>
+    </section>
+
+    <section id="theory">
+        <h2>Research & Theories</h2>
+        <div class="card">
+            <h3>The Dot Unified Theory of Infinity</h3>
+            <p>A mathematical framework exploring the nature of infinite boundaries and cosmological origin points.</p>
+        </div>
+        <div class="card">
+            <h3>The Blaton Concept</h3>
+            <p>Original research into Dark Energy units and their repulsive pressure on space-time curvature.</p>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
+
